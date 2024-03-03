@@ -4,7 +4,7 @@ export default function AboutPage() {
     <div className="container pt-4">
         <section>
             <h2>About</h2>
-            <img src="./assets/Sawyer_Garden_of_the_Gods.jpg" class="w-50 float-end imgshadow" alt="Sawyer leaning against a fence in Garden of the Gods, Colorado"/>
+            <img src="./assets/Sawyer_Garden_of_the_Gods.jpg" className="w-50 float-end imgshadow" alt="Sawyer leaning against a fence in Garden of the Gods, Colorado"/>
             <section class="bio">
                 <div>
                     <h3>Early Years:</h3>
