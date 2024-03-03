@@ -1,14 +1,19 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
-const Header = () => {
-  return (
-    <div>
-        <Link to={''}>About Me</Link>
-        <Link to={"contact"}>Contact</Link>
-        <Link to={"portfolio"}>Portfolio</Link>
-        <Link to={"Resume"}>Resume</Link>
-    </div>
-  )
-}
 
-export default Header
+import { Link } from 'react-router-dom';
+import Navbar from './UI/Navbar';
+export default function  Header (){
+    return(
+        <div>
+            
+            <Navbar
+                links={[
+                    <Link key={1} to={''}>About Me</Link>,
+                    <Link key={2} to={"Contact"}>Contact</Link>,
+                    <Link key={3} to={"Portfolio"}>Portfolio</Link>,
+                    <Link key={4} to={"Resume"}>Resume</Link>,
+                ]}
+            />
+        </div>
+    );
+}

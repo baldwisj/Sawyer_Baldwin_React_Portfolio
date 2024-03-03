@@ -8,6 +8,7 @@ export default function Nav({ links }) {
           </ul>
         </div>
       </div>
+      <h1>Sawyer Baldwin</h1>
     </nav>
   );
 }
