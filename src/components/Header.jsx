@@ -4,8 +4,8 @@ import { Link } from 'react-router-dom';
 import Navbar from './UI/Navbar';
 export default function  Header (){
     return(
-        <div>
-            
+        <div className='inline-block'>
+            <h1>Sawyer Baldwin Portfolio</h1>
             <Navbar
                 links={[
                     <Link key={1} to={''}>About Me</Link>,
