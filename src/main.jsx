@@ -1,18 +1,17 @@
 import ReactDOM from 'react-dom/client';
-// Bringing in the required imports from 'react-router-dom' to set up application routing behavior
+// This is bringing in the required imports from 'react-router-dom' to set up application routing behavior
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './index.css';
 import React from 'react'
-// Bringing in the pages the router will use to conditionally show the appropriate views
 import App from './App';
 import Resume from './pages/Resume';
 import Portfolio from './pages/Portfolio';
 import About from './pages/About';
 import Contact from './pages/Contact';
 
-// Define the accessible routes, and which components respond to which URL
+// The folllowing code defines the accessible routes, and which components respond to which URL
 const router = createBrowserRouter([
   {
     path: '/',
@@ -38,7 +37,7 @@ const router = createBrowserRouter([
   },
 ]);
 
-// Render the RouterProvider component
+// This rendersthe RouterProvider component
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
   <RouterProvider router={router} />
