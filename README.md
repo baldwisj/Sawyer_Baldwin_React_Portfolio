@@ -22,7 +22,7 @@ Durning my creation of this webpage I have learned and sharpened many of my codi
 * I now have a more thorough understanding of event handlers through react.
 
 ## Screenshot
-![Full-Screenshot]()
+![Full-Screenshot](./assets/appscreenshot.png)
 
 ## Links
 https://sawyer-baldwin-react-portfolio.netlify.app/
