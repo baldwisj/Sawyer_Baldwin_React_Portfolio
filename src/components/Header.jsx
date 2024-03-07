@@ -11,10 +11,10 @@ export default function Header() {
             <Navbar
                 //These links send the user to the cooresponding nav page
                 links={[
-                    <Link key={1} to={''} style={{ margin: '10px' }} className={location.pathname ==='/'? 'active-link nav-link' : 'nav-link'}>About Me</Link>,
-                    <Link key={2} to={"Contact"} style={{ margin: '10px' }} className={location.pathname ==='Contact'? 'active-link nav-link' : 'nav-link'}>Contact</Link>,
-                    <Link key={3} to={"Portfolio"} style={{ margin: '10px' }} className={location.pathname ==='Portfolio'? 'active-link nav-link' : 'nav-link'}>Portfolio</Link>,
-                    <Link key={4} to={"Resume"} style={{ margin: '10px' }} className={location.pathname ==='Resume'? 'active-link nav-link' : 'nav-link'}>Resume</Link>,
+                    <Link key={1} to={''} style={{ margin: '10px' }} className={location.pathname === '/' ? 'active-link nav-link' : 'nav-link'}>About Me</Link>,
+                    <Link key={2} to={"Contact"} style={{ margin: '10px' }} className={location.pathname === 'Contact' ? 'active-link nav-link' : 'nav-link'}>Contact</Link>,
+                    <Link key={3} to={"Portfolio"} style={{ margin: '10px' }} className={location.pathname === 'Portfolio' ? 'active-link nav-link' : 'nav-link'}>Portfolio</Link>,
+                    <Link key={4} to={"Resume"} style={{ margin: '10px' }} className={location.pathname === 'Resume' ? 'active-link nav-link' : 'nav-link'}>Resume</Link>,
                 ]}
             />
         </div>
