@@ -28,6 +28,16 @@ function Form() {
     }
   };
 
+  const handleBlur = (e) => {
+    const { target } = e;
+    const inputValue = target.value;
+    const inputName = target.name;
+
+    if (!inputValue) {
+      setErrorMessage(`${inputName} is required`);
+    }
+  };
+
   const handleFormSubmit = (e) => {
     // Preventing the default behavior of the form submit (which is to refresh the page)
     e.preventDefault();
@@ -40,15 +50,11 @@ function Form() {
       
     }
     if (!name) {
-      setErrorMessage(
-        `Please Enter a Name`
-      );
+      setErrorMessage(`Please Enter a Name`);
       return;
     }
     if (!message) {
-        setErrorMessage(
-          `Please Enter a Message`
-        );
+        setErrorMessage(`Please Enter a Message`);
         return;
       }
 
@@ -67,6 +73,7 @@ function Form() {
           value={email}
           name="email"
           onChange={handleInputChange}
+          onBlur={handleBlur}
           type="email"
           placeholder="Email"
         />
@@ -74,8 +81,9 @@ function Form() {
         <div className="form-group">
         <input
           value={name}
-          name="Name"
+          name="name"
           onChange={handleInputChange}
+          onBlur={handleBlur}
           type="text"
           placeholder="Name"
         />
@@ -85,6 +93,7 @@ function Form() {
           value={message}
           name="message"
           onChange={handleInputChange}
+          onBlur={handleBlur}
           type="text"
           placeholder="Message"
         />

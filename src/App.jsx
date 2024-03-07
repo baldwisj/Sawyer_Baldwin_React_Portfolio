@@ -9,7 +9,7 @@ function App() {
   return (
     <>
       <Header />
-      <Outlet />
+      <Outlet className="full-width"/>
       <Footer />
     </>
   )

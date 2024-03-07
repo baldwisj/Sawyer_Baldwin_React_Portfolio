@@ -1,42 +1,79 @@
+:root {
+  --dark-blue: #3B4C5E;
+  --light-grey: #C7D3DE;
+  --gray-green: #5C5C51;
+  --dark-gray-green: #383D2D;
+  --medium-brown: #CDBBAD;
+}
 #root {
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
 }
-
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
+.header {
+  margin-right: 10px;
+  margin-left: 10px;
 }
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.nav-link {
+  color: white;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.about {
+  margin-bottom: 10px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.contactContainer {
+  height: 550px;
 }
-
 .card {
-  padding: 2em;
+  display: inline-block;
+  border: 3px solid black;
+  padding: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+  position: relative;
+  width: 350px;
+  background: var(--light-grey)
 }
 
-.read-the-docs {
-  color: #888;
+h3 {
+  color: var(--dark-gray-green);
+  font-weight: 600;
+  font-style: normal;
+}
+
+p {
+    font-weight: bold;
+}
+
+
+.card:hover {
+  background: gray;
+}
+
+.projectImage {
+  width: 100%;
+  height: 250px;
+  border: black 2px solid;
+  
+}
+
+.githubLogo {
+  max-width: 30px;
+}
+
+.repository{
+  color: var(--dark-gray-green)
+}
+.repository:hover {
+  color: var(--medium-brown);
+}
+.logos {
+  height: 35px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.singleLogo:hover {
+  opacity: 0.5;
 }

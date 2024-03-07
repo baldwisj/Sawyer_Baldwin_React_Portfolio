@@ -1,19 +1,13 @@
-// This is a static page mocking an "About Us" section for our fake user data
+//This is the about page which sources the html for the about page
 export default function AboutPage() {
   return (
     <div className="container pt-4">
-        <section>
-            <h2>About</h2>
-            <img src="./assets/Sawyer_Garden_of_the_Gods.jpg" className="w-50 float-end imgshadow" alt="Sawyer leaning against a fence in Garden of the Gods, Colorado"/>
-            <section class="bio">
-                <div>
-                    <h3>Early Years:</h3>
-                        <p>Sawyer was born in New Hampshire in the mid 90's. He is the youngest of three boys. His family moved to New Mexico when he was only three, 
-                        only to move back to New Hampshire when he was 11. While in New Mexico, Sawyer developed a love for the American South West and Mexican 
-                        cusine. Thoughout his highschool years he played soccer, swam on the swim team, and ran the hurdles in track and field, eventually 
-                        taking 3rd place in the 300 meter hurdles at states his senior year. During his time in highschool he also played trumpet in the jazz 
-                        band. In his senior year, he left soccer to try cross country running, comming in 16th at the state championship that year.</p>
-                </div>
+        <h2 className="contentHeader w-100">About</h2>
+        <section className="about row">
+            
+            <img src="./assets/Sawyer_Garden_of_the_Gods.jpg" className=" col w-50 d-flex flex-wrap imgshadow " alt="Sawyer leaning against a fence in Garden of the Gods, Colorado"/>
+            <section className="col">
+                
                 <div>
                     <h3>College years:</h3>
                         <p>After graduating highschool, Sawyer attended Clarkson University for Civil Engineering. However, after two years, he realized Civil 
