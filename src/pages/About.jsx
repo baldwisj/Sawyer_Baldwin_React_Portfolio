@@ -1,4 +1,4 @@
-import profilePic from "./assets/Sawyer_Garden_of_the_Gods.jpg";
+import profilePic from "../../assets/sawyergotg.jpg";
 
 //This is the about page which sources the html for the about page
 export default function AboutPage() {

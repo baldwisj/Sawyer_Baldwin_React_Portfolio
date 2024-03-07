@@ -1,5 +1,5 @@
 import React from 'react'
-import resume from "./assets/Resume_3-03-2024";
+import resume from "../../assets/resume032024.jpg";
 
 //The resume page has a link to download the resume and an image of the resume
 const Resume = () => {
